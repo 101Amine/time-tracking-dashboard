@@ -1,0 +1,76 @@
+.flex {
+    display: grid;
+}
+
+.col-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+h2 {
+    font-size: 18px;
+
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+p {
+    padding: 14px;
+}
+
+
+
+.card {
+    width: 230px;
+    font-family: 'Rubik';
+ }
+
+.card .card_content {
+    background-color: hsl(235, 46%, 20%);
+    place-content: center;
+    padding: 30px;
+    border-radius: 15px;
+    transform: translate(0,-15px);
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding: 20px 22px 15px 22px;
+}
+
+.card .colorful_banner {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.colorful_banner .icon_work {
+    float: right;
+}
+
+.icon_ellipsis {
+    display: inherit;
+    align-self: center;
+    margin-left: auto;
+}
+
+
+.card .time, .card .tracking {
+    grid-column: span 2;
+}
+
+
+
+.card .time {
+    font-size: 40px;
+}
+
+
+h4 {
+    font-size: 16px;
+    color: #bdc1ff;
+    font-weight: 400;
+}
