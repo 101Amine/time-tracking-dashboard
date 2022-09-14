@@ -2,7 +2,14 @@ import React from 'react'
 import './headerCard.css'
 
 
-export const HeaderCard = () => {
+export const HeaderCard = ({setTimeType, timeType}) => {
+
+
+  const handleClick = (e) => {
+    setTimeType(e.currentTarget.dataset.id)
+
+  }
+
   return (
     <div className='long_card'>
 
@@ -17,9 +24,11 @@ export const HeaderCard = () => {
         <div className='bottom_side'>
 
             <ul>
-                <li>Daily</li>
-                <li>Weekly</li>
-                <li>Monthly</li>
+                <li data-id='Daily' 
+                style={{color: timeType==='Daily' ? 'azure' : ''}}
+                 onClick={handleClick}>Daily</li>
+                <li  style={{color: timeType==='Weekly' ? 'azure' : ''}} data-id='Weekly'  onClick={handleClick}>Weekly</li>
+                <li style={{color: timeType==='Monthly' ? 'azure' : ''}} data-id='Monthly' onClick={handleClick}>Monthly</li>
 
             </ul>
 
