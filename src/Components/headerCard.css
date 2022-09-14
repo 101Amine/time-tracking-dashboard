@@ -1,0 +1,64 @@
+.long_card {
+    height: 100%;
+    font-family: 'Rubik';
+    height: 417px;
+    width: 200px;
+    background-color:hsl(235, 46%, 20%);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+
+.long_card .upper_side {
+    background-color: #5847eb;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.avatar {
+    width: 55px;
+    border: 5px solid white;
+    border-radius: 50px;
+}
+
+
+.upper_side h3 {
+    font-size: 16px;
+    padding-top: 20%;
+    font-size: 16px;
+    padding-top: 20%;
+}
+
+
+
+.upper_side h1 {
+    font-weight: 300;
+    margin-bottom: 30%;
+    padding-top: 11%;
+}
+
+
+
+.bottom_side {
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+ul {
+    display: grid;
+    list-style: none;
+    gap: 1rem;
+}
+
+ul li {
+    color: #6f76c8;
+    cursor: pointer;
+}
+
+
+ul li:hover {
+    color:azure;
+}
